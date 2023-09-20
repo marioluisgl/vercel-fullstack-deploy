@@ -55,7 +55,7 @@ export class ApiServer {
         const expressSessionOpt = {secret: 'keyboard cat', resave: true, saveUninitialized: true};
         this._app.use(session(expressSessionOpt));
 
-        this._port = GLOBAL_CONFIG.config.https ? '8082' : '80';
+        this._port = GLOBAL_CONFIG.config.https ? '8082' : '3000';
         this._app.set('port', this._port);
 
         mongooseMiddleware.initialize(mongoose);
