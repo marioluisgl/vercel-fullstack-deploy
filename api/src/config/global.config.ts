@@ -23,7 +23,7 @@ export const GLOBAL_CONFIG: any = {
         database_local: process.env.DATABASE_LOCAL_URI || '',
         web: {
             name: 'vercel-fullstack-deploy',
-            host: 'https://localhost:4200',
+            host: 'http://localhost:4200',
         },
     },
     production : {
@@ -40,7 +40,7 @@ export const GLOBAL_CONFIG: any = {
         database_local: process.env.DATABASE_LOCAL_URI || '',
         web: {
             name: 'vercel-fullstack-deploy',
-            host: 'https://localhost:4200',
+            host: 'http://localhost:4200',
         },
     }
 }[ENVIROMENTS.defaultEnviroment];
