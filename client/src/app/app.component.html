@@ -1,0 +1,87 @@
+
+
+<h1 class="flex justify-center items-center text-3xl mt-16">
+  Angular APP to deploy in Vercel!
+</h1>
+
+<div class="flex justify-center items-center m-4 border-b">
+
+  <form class="mb-10">
+
+    <div class="flex justify-center items-center">
+
+      <div class="m-2">
+        <input 
+          class="w-16 h-16 rounded-full text-center bg-white text-black" 
+          type="text"
+          [(ngModel)]="numberOne"
+          [ngModelOptions]="{standalone: true}">
+      </div>
+
+      <div class="m-2">
+        <input 
+          class="w-16 h-16 rounded-full text-center bg-white text-black" 
+          type="text"
+          [(ngModel)]="numberTwo"
+          [ngModelOptions]="{standalone: true}">
+      </div>
+
+      <div class="m-2">
+        <input 
+          class="w-16 h-16 rounded-full text-center bg-white text-black" 
+          type="text"
+          [(ngModel)]="numberThree"
+          [ngModelOptions]="{standalone: true}">
+      </div>
+
+      <div class="m-2">
+        <input 
+          class="w-16 h-16 rounded-full text-center bg-white text-black" 
+          type="text"
+          [(ngModel)]="numberFour"
+          [ngModelOptions]="{standalone: true}">
+      </div>
+
+      <div class="m-2">
+        <input 
+          class="w-16 h-16 rounded-full text-center bg-white text-black" 
+          type="text"
+          [(ngModel)]="numberFive"
+          [ngModelOptions]="{standalone: true}">
+      </div>
+
+      <div>
+        <input 
+          class="w-16 h-16 rounded-full text-center bg-red-500 text-white" 
+          type="text"
+          [(ngModel)]="ball"
+          [ngModelOptions]="{standalone: true}">
+      </div>
+
+    </div>
+
+    <div class="mt-6">
+      <button type="button"
+          (click)="register()"
+          class="flex w-full justify-center 
+          rounded-md bg-indigo-600 px-3 py-3 
+          text-sm font-semibold leading-6 
+          text-white shadow-sm 
+          hover:bg-indigo-500 
+          focus-visible:outline 
+          focus-visible:outline-2 
+          focus-visible:outline-offset-2 
+          focus-visible:outline-indigo-600">
+          Add
+      </button>
+    </div>
+
+  </form>
+
+
+
+</div>
+
+
+
+<router-outlet></router-outlet>
